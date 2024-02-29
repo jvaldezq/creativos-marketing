@@ -1,8 +1,13 @@
 ---
 import { Image } from 'astro:assets';
-import CreativosLogo from '@/assets/creativos-marketing-cr-logo-v1.webp';
+import CreativosBombillo from '../assets/creativos-bombillo.webp';
+import BgCorner from '../assets/bg-corner.webp';
 ---
-
-<header class="flex justify-center">
-    <Image src={CreativosLogo} alt="Creativos Marketing Logo"  class="aspect-square"/>
+<header class="flex gap-2 justify-center pt-5 mb-8 md:mb-20 items-center px-4 relative">
+    <Image src={CreativosBombillo} alt="Creativos Marketing Logo"  class="aspect-auto animate-fade animate-once animate-duration-2000 animate-delay-[1800ms] animate-ease-in h-1/2 md:h-auto w-auto"/>
+    <div class="flex flex-col bottom-0 right-0">
+    <h1 class="py-2 px-5 bg-black text-white font-bold text-3xl md:text-5xl xl:text-7xl 2xl:text-8xl rounded rotate-[-2deg] shadow-md mr-8 animate-flip-down animate-once animate-duration-[2000ms] animate-delay-0 animate-ease-out">CREATIVOS</h1>
+    <h2 class="py-2 px-5 bg-white text-black font-bold text-3xl md:text-5xl xl:text-7xl 2xl:text-8xl rounded rotate-[-2deg] shadow-2xl ml-8 animate-flip-up animate-once animate-duration-[2000ms] animate-delay-[700ms] animate-ease-out">MARKETING</h2>
+    </div>
+    <Image src={BgCorner} alt="Creativos Marketing Stars"  class="aspect-auto absolute top-0 right-0 animate-fade animate-once animate-duration-2000 animate-delay-[1800ms] animate-ease-in h-1/2 md:h-3/4 w-auto"/>
 </header>

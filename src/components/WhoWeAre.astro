@@ -1,45 +1,27 @@
 ---
 import {Image} from "astro:assets";
-import BTLIcon from "@/assets/btl.svg"
-import SoftwareIcon from "@/assets/software.svg"
-import ImpulsionIcon from "@/assets/improve-chart.svg"
-import OutsourcingIcon from "@/assets/outsourcing.svg"
+import QuienesSomosIcon from "@/assets/quienes-somos.webp"
+import SomosIcon from "@/assets/somos.webp"
 ---
 
-<section class="max-w-screen-2xl max-auto mx-auto px-4 mb-8">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-    <article class="flex flex-col justify-items-center items-center gap-2">
-        <Image src={BTLIcon} alt="Creativos Marketing BTL"  class="aspect-square"/>
-        <h3 class="text-xl font-bold text-primary text-center">Somos BTL</h3>
-        <p class="text-base font-light text-primary text-center text-pretty">
-            Creativos Marketing CR sobresale en estrategias BTL, generando conexiones memorables y reconocimiento de marca a través de eventos y promociones innovadoras en puntos de venta.
+<section class="max-w-screen-lg max-auto mx-auto px-4 my-4">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center justify-items-center">
+    <article class="flex flex-col text-center md:text-end gap-3 col-span-2 animate-fade animate-once animate-duration-300 animate-delay-0">
+        <h3 class="font-bold text-white text-3xl">QUIENES SOMOS?</h3>
+        <p class="text-lg font-semibold text-black text-balance">
+            Somos lo que su empresa necesita, 3 apasionados del mercadeo, nos conocimos justamente trabajando en BTL, impulsando marcas y decidimos emprender un viaje con nuestra propia agencia publicitaria.
         </p>
     </article>
-    <article class="flex flex-col justify-items-center items-center gap-2">
-        <Image src={SoftwareIcon} alt="Creativos Marketing Desarrollo Software"  class="aspect-square"/>
-        <h3 class="text-xl font-bold text-primary  text-center">Somos Desarrollo Software</h3>
-        <p class="text-base font-light text-primary text-center text-pretty">
-            Creativos Marketing CR desarrolla software personalizado para potenciar la presencia digital de negocios. Desde aplicaciones móviles hasta plataformas web, transformamos ideas en realidad digital para impulsar el éxito en línea.
-        </p>
-    </article>
-    <article class="flex flex-col justify-items-center items-center gap-2">
-        <Image src={ImpulsionIcon} alt="Creativos Marketing Impulsión"  class="aspect-square"/>
-        <h3 class="text-xl font-bold text-primary text-center">Somos Impulsión</h3>
-        <p class="text-base font-light text-primary text-center text-pretty">
-            En Creativos Marketing CR, somos Impulsión: tu aliado para el crecimiento y visibilidad de marca. Nos destacamos en estrategias publicitarias y de redes sociales, llevando tu negocio al siguiente nivel con innovación y ejecución impecable.
-        </p>
-    </article>
-    <article class="flex flex-col justify-items-center items-center gap-2 md:col-start-2 lg:col-start-auto">
-        <Image src={OutsourcingIcon} alt="Creativos Marketing outsourcing"  class="aspect-square"/>
-        <h3 class="text-xl font-bold text-primary text-center">Somos outsourcing</h3>
-        <p class="text-base font-light text-primary text-center text-pretty">
-            En Creativos Marketing CR, ofrecemos servicios de outsourcing en marketing para optimizar tus recursos y permitirte enfocarte en el crecimiento de tu negocio.
-        </p>
-    </article>
+        <Image src={QuienesSomosIcon} alt="Creativos Marketing Desarrollo Software"  class="aspect-auto animate-fade-left animate-once animate-duration-500 animate-delay-[1000ms] animate-ease-in-out"/>
     </div>
-    <article class="w-full flex flex-col text-center my-24 gap-2">
-        <h4 class="text-5xl font-bold text-primary">SOMOS</h4>
-        <h5 class="text-3xl font-bold text-primary-v2 text-balance">TALENTO • INTELIGENCIA • EXCELENCIA • OPORTUNIDAD</h5>
-        <h2 class="text-4xl font-bold text-primary">SOMOS CREATIVOS</h2>
-    </article>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center justify-items-center mt-16">
+        <article class="grid w-full md:w-auto grid-cols-1 md:grid-cols-2 text-start gap-3 col-span-2 animate-fade animate-once animate-duration-300 animate-delay-0">
+            <h3 class="bg-black text-white font-bold rounded shadow-2xl text-center py-2 px-5 text-3xl">Talento</h3>
+            <h3 class="bg-white text-black font-bold rounded shadow-2xl text-center py-2 px-5 text-3xl">Inteligencia</h3>
+            <h3 class="bg-black text-white font-bold rounded shadow-2xl text-center py-2 px-5 text-3xl">Excelencia</h3>
+            <h3 class="bg-white text-black font-bold rounded shadow-2xl text-center py-2 px-5 text-3xl">Oportunidad</h3>
+        </article>
+        <Image src={SomosIcon} alt="Creativos Marketing Desarrollo Software"  class="aspect-auto row-auto md:row-start-1 animate-fade-right animate-once animate-duration-500 animate-delay-[1000ms] animate-ease-in-out"/>
+    </div>
 </section>

@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Poppins", "sans-serif"],
+				sans: ["Nunito Variable", "sans-serif"],
 			},
 			colors: {
 				primary: '#0C823E',
@@ -17,5 +17,7 @@ export default {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('tailwindcss-animated')
+	],
 }
