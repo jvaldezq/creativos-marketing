@@ -1,0 +1,37 @@
+---
+import {Image} from "astro:assets";
+import WhatsappIcon from '@/icons/WhatsappIcon.astro'
+import EmailIcon from '@/icons/EmailIcon.astro'
+import LocationIcon from '@/icons/LocationIcon.astro'
+import PhoneIcon from '@/icons/PhoneIcon.astro'
+---
+<section class="max-w-screen-lg max-auto mx-auto px-4 my-28">
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-3 justify-center items-center">
+        <div class="flex justify-center md:justify-start flex-col">
+            <h2 class="font-bold text-third text-5xl">Contáctanos</h2>
+            <p>Póngase en contacto con nuestro equipo para ofrecerle el mejor servicio</p>
+        </div>
+        <div class="grid col-span-2 gap-y-4 md:gap-4 grid-cols-1 md:grid-cols-2 justify-center items-center">
+            <a href="mailto:ventas@creativosmarketingcr.com" target="_blank" class="flex w-full p-4 gap-2 flex-col justify-center items-center cursor-pointer bg-slate-300/[0.5] rounded shadow-xl transition-all hover:scale-105">
+                <EmailIcon class="hover:animate-jump hover:animate-once hover:animate-ease-out" />
+                <h5>ventas@creativosmarketingcr.com</h5>
+            </a>
+
+            <a href="whatsapp://send?abid=88888888" target="_blank" class="flex w-full p-4 gap-2 flex-col justify-center items-center cursor-pointer bg-slate-300/[0.5] rounded shadow-xl transition-all hover:scale-105">
+                <WhatsappIcon class="hover:animate-jump hover:animate-once hover:animate-ease-out" />
+                <h5>Whatsapp</h5>
+            </a>
+
+            <a href="tel:+50683938292" target="_blank" class="flex w-full p-4 gap-2 flex-col justify-center items-center cursor-pointer bg-slate-300/[0.5] rounded shadow-xl transition-all hover:scale-105">
+                <PhoneIcon class="hover:animate-jump hover:animate-once hover:animate-ease-out" />
+                <h5>+506 8393-8292</h5>
+            </a>
+
+            <a target="_blank" class="flex w-full p-4 gap-2 flex-col justify-center items-center cursor-pointer bg-slate-300/[0.5] rounded shadow-xl transition-all hover:scale-105">
+                <LocationIcon class="hover:animate-jump hover:animate-once hover:animate-ease-out" />
+                <h5>Costa Rica</h5>
+            </a>
+        </div>
+    </div>
+
+</section>
