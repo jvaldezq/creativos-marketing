@@ -1,13 +1,17 @@
 ---
 import { Image } from 'astro:assets';
-import CreativosBombillo from '../assets/creativos-bombillo.webp';
-import BgCorner from '../assets/bg-corner.webp';
+import CreativosBombillo from '@/assets/creativos-bombillo.webp';
+import BgCorner from '@/assets/bg-corner.webp';
+import Logo from '@/assets/logo.webp';
 ---
 <header class="flex gap-2 justify-center pt-5 mb-8 md:mb-20 items-center px-4 relative">
-    <Image src={CreativosBombillo} alt="Creativos Marketing Logo"  class="aspect-auto animate-fade animate-once animate-duration-2000 animate-delay-[1800ms] animate-ease-in h-1/2 md:h-auto w-auto"/>
-    <div class="flex flex-col bottom-0 right-0">
-    <h1 class="py-2 px-5 bg-third text-white font-bold text-2xl md:text-5xl xl:text-7xl 2xl:text-8xl rounded rotate-[-2deg] shadow-md mr-8 animate-flip-down animate-once animate-duration-[2000ms] animate-delay-0 animate-ease-out">CREATIVOS</h1>
-    <h2 class="py-2 px-5 bg-white text-third font-bold text-2xl md:text-5xl xl:text-7xl 2xl:text-8xl rounded rotate-[-2deg] shadow-2xl ml-8 animate-flip-up animate-once animate-duration-[2000ms] animate-delay-[700ms] animate-ease-out">MARKETING</h2>
+    <div class="bg-third/[0.7] rounded w-full flex justify-center items-center py-4 animate-fade-up animate-once animate-ease-linear animate-duration-500">
+        <Image src={Logo} alt="Creativos Marketing Logo"  class="aspect-auto animate-fade animate-once animate-duration-800 animate-delay-300 animate-ease-in h-1/2 md:h-auto w-auto"/>
     </div>
+    <!--<Image src={CreativosBombillo} alt="Creativos Marketing Logo"  class="aspect-auto animate-fade animate-once animate-duration-2000 animate-delay-[1800ms] animate-ease-in h-1/2 md:h-auto w-auto"/>-->
+    <!--<div class="flex flex-col bottom-0 right-0">-->
+    <!--<h1 class="py-2 px-5 bg-third text-white font-bold text-2xl md:text-5xl xl:text-7xl 2xl:text-8xl rounded rotate-[-2deg] shadow-md mr-8 animate-flip-down animate-once animate-duration-[2000ms] animate-delay-0 animate-ease-out">CREATIVOS</h1>-->
+    <!--<h2 class="py-2 px-5 bg-white text-third font-bold text-2xl md:text-5xl xl:text-7xl 2xl:text-8xl rounded rotate-[-2deg] shadow-2xl ml-8 animate-flip-up animate-once animate-duration-[2000ms] animate-delay-[700ms] animate-ease-out">MARKETING</h2>-->
+    <!--</div>-->
     <Image src={BgCorner} alt="Creativos Marketing Stars"  class="aspect-auto absolute top-0 right-0 animate-fade animate-once animate-duration-2000 animate-delay-[1800ms] animate-ease-in h-2/5 md:h-3/4 w-auto"/>
 </header>
